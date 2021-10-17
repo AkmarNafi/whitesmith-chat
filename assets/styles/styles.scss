@@ -1,0 +1,232 @@
+@import "~bulma/sass/utilities/_all";
+
+@import "variables";
+$colors: (
+     "custom-blue": (
+          $blue-dark,
+          white,
+     ),
+     "white": (
+          $white,
+          $black,
+     ),
+     "black": (
+          $black,
+          $white,
+     ),
+     "light": (
+          $light,
+          $light-invert,
+     ),
+     "dark": (
+          $dark,
+          $dark-invert,
+     ),
+     "primary": (
+          $primary,
+          $primary-invert,
+     ),
+     "info": (
+          $info,
+          $info-invert,
+     ),
+     "success": (
+          $success,
+          $success-invert,
+     ),
+     "warning": (
+          $warning,
+          $warning-invert,
+     ),
+     "danger": (
+          $danger,
+          $danger-invert,
+     ),
+);
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+body,
+html {
+     margin: 0;
+}
+
+.text-primary {
+     color: $primary-text;
+}
+.text-secondary {
+     color: $secondary-text;
+}
+
+input,
+button,
+* {
+     font-family: "Poppins", sans-serif;
+}
+
+h1 {
+     font-size: 40px;
+     font-weight: 700;
+}
+/*================================ forms ==============================*/
+
+/*================================ borders ==============================*/
+
+.border-bottom {
+     border-bottom: 1px solid $border-color;
+}
+
+/*================================ Helpers ==============================*/
+.capitalize {
+     text-transform: capitalize;
+}
+.text-center {
+     text-align: center;
+}
+.text-left {
+     text-align: left;
+}
+.greyscale {
+     filter: grayscale(100%);
+     opacity: 0.7;
+}
+
+.rotated {
+     transform: rotate(180deg);
+}
+
+/*================================ spacing ==============================*/
+
+.mt-10 {
+     margin-top: 10px;
+}
+.mt-20 {
+     margin-top: 20px;
+}
+.mt-30 {
+     margin-top: 30px;
+}
+.mt-40 {
+     margin-top: 40px;
+}
+.mt-50 {
+     margin-top: 50px;
+}
+.mt-60 {
+     margin-top: 60px;
+}
+.mt-70 {
+     margin-top: 70px;
+}
+.mt-80 {
+     margin-top: 80px;
+}
+.mb-10 {
+     margin-bottom: 10px;
+}
+.mb-20 {
+     margin-bottom: 20px;
+}
+.mb-30 {
+     margin-bottom: 30px;
+}
+.mb-40 {
+     margin-bottom: 40px;
+}
+.mb-50 {
+     margin-bottom: 50px;
+}
+.mb-60 {
+     margin-bottom: 60px;
+}
+.mb-70 {
+     margin-bottom: 70px;
+}
+.mb-80 {
+     margin-bottom: 80px;
+}
+.bgr {
+     background-color: red;
+}
+.bgb {
+     background-color: blue;
+}
+.bgg {
+     background-color: green;
+}
+
+/*================================ tags ==============================*/
+.tag.outline {
+     border: 1px solid $grey-dark;
+     background: transparent;
+     border-radius: 20px;
+     font-size: 10px;
+     color: $secondary-text;
+}
+
+/*================================ fontsizes ==============================*/
+
+/*================================ colors ==============================*/
+
+.primary {
+     color: $primary;
+}
+.pink-combo {
+     color: $pink-dark;
+     background: $pink-light;
+}
+
+.orange-combo {
+     color: $orange-dark;
+     background: $orange-light;
+}
+/*================================ input ==============================*/
+
+/*================================ Buttons ==============================*/
+
+/*================================ modal ==============================*/
+
+.modal-background {
+     background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-close::before,
+.modal-close::after {
+     background-color: #000000;
+}
+
+.modal-content {
+     background: white;
+     width: 600px;
+     max-height: 80vh;
+     min-height: 700px;
+}
+
+.closebtn {
+     width: 30px;
+     height: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100%;
+     cursor: pointer;
+}
+.closebtn:hover {
+     background: rgba(0, 0, 0, 0.05);
+}
+
+/*================================ scrollbars ==============================*/
+.b-sidebar .sidebar-content {
+     background: $secondary-bg;
+}
+/*================================ transiton ==============================*/
+
+.page-enter-active,
+.page-leave-active {
+     transition: opacity 0.4s;
+}
+.page-enter,
+.page-leave-to {
+     opacity: 0;
+}

@@ -1,0 +1,38 @@
+$primary: #000;
+$secondary: #fff;
+
+/*================================ text ==============================*/
+
+$primary-text: #000;
+$secondary-text: #7b7d86;
+
+/*================================ colors ==============================*/
+
+$grey-dark: #cfcfcf;
+$grey-light: #f9f9f9;
+$blue-dark: #7fb5ff;
+$blue-light: #9ec5fa;
+$pink-dark: #f178b6;
+$pink-light: #fef0f6;
+$orange-dark: #f2994a;
+$orange-light: #faebbd;
+$green-dark: #27ae60;
+$green-light: #a6d5ba;
+
+/*================================ other color ==============================*/
+
+$primary-bg: $grey-light;
+$secondary-bg: #fff;
+
+$border-color: #f0f0f0;
+
+$primary-invert: findColorInvert($primary);
+
+$mobile: "screen and (max-width : 1008px)";
+
+/*================================ sidebar ==============================*/
+
+$sidebar-mobile-width: 200px;
+$sidebar-box-shadow: none;
+$sidebar-background: $secondary-bg;
+$sidebar-width: 400px;
