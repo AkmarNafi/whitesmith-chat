@@ -25,16 +25,16 @@
       </div>
       <div class="member-sections-container">
         <div
-          v-for="(role, index1) in Object.keys(users)"
+          v-for="(role, index1) in Object.keys(usersByGroups)"
           :key="index1"
           class="member-sections"
         >
           <div class="role">
             {{ $t(role)
-            }}<span class="team-count">{{ users[role].length }}</span>
+            }}<span class="team-count">{{ usersByGroups[role].length }}</span>
           </div>
           <user-widget
-            v-for="(userData, index2) in users[role]"
+            v-for="(userData, index2) in usersByGroups[role]"
             :key="index2"
             :user-data="userData"
             :collapse="isSidebarReduced"
@@ -62,7 +62,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['users']),
+    ...mapGetters(['usersByGroups']),
   },
 }
 </script>

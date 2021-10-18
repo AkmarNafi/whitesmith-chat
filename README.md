@@ -18,7 +18,9 @@ https://whitesmith-chat.web.app
 ## Features
 
 - Open and close members sidebar without effecting chat area
+
 - Shows Online/offline, status, display picture when sidebar is in closed state
+- Groups users by role, shows number of user in each role
 - Configurable global style variable
 - State management with VueX
 - I18n support for english.

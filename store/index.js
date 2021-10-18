@@ -6,7 +6,7 @@ export const state = () => ({
       location: 'home',
       department: 'd4',
       status: 'On break',
-      picture: require('@/assets/images/avatar.png'),
+      picture: require('@/assets/images/user1.png'),
       isOnline: true,
     },
     {
@@ -15,6 +15,7 @@ export const state = () => ({
       location: 'office',
       department: 'd3',
       status: 'In a meeting',
+      picture: require('@/assets/images/user2.png'),
     },
     {
       name: 'Jerry Nelson',
@@ -22,7 +23,6 @@ export const state = () => ({
       location: 'office',
       department: 'd2',
       status: 'Troubleshooting',
-      picture: require('@/assets/images/avatar.png'),
     },
     {
       name: 'Jenny Wilson',
@@ -30,6 +30,7 @@ export const state = () => ({
       location: 'home',
       department: 'd2',
       status: null,
+      picture: require('@/assets/images/user3.png'),
       isOnline: true,
     },
     {
@@ -38,7 +39,7 @@ export const state = () => ({
       location: 'office',
       department: 'd1',
       status: 'In a meeting',
-      picture: require('@/assets/images/avatar.png'),
+      picture: require('@/assets/images/user4.png'),
     },
     {
       name: 'Theresa Webb',
@@ -47,27 +48,27 @@ export const state = () => ({
       department: 'd1',
       status: null,
     },
-
     {
-      name: 'Theresa Webb',
+      name: 'John Doe',
       role: 'IT',
       location: 'home',
       department: 'd1',
       status: null,
     },
-
     {
-      name: 'Theresa Webb',
+      name: 'akmar nafi',
       role: 'IT',
-      location: 'home',
+      location: 'office',
       department: 'd1',
       status: null,
+      isOnline: true,
     },
   ],
 })
 
 export const getters = {
-  users: (state) => {
+  // Converts users array to groups based on the role.
+  usersByGroups: (state) => {
     const userList = {}
 
     for (let i = 0; i < state.users.length; i++) {
