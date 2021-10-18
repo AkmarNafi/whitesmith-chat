@@ -51,7 +51,7 @@ export default {
     return {
       expandOnHover: false,
       expandWithDelay: false,
-  
+
       reduce: false,
     }
   },
@@ -115,7 +115,7 @@ export default {
 
     .status-text {
       position: absolute;
-      bottom: -8px;
+      bottom: -9px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -131,7 +131,11 @@ export default {
         text-align: center;
         font-size: 12px;
         display: block;
-        padding: 3px 10px;
+        padding: 0px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22px;
       }
     }
     .online-pin {
