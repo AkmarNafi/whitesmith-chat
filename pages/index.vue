@@ -1,10 +1,8 @@
 <template>
   <div class="body">
-    <div class="columns m-0 p-0" style="height:100%">
-      <div class="groups"></div>
-      <div class="column m-0 p-0">
-       
-      </div>
+    <div class="columns m-0 p-0" style="height: 100%">
+      <div class="groups is-hidden-mobile"></div>
+      <div class="column m-0 p-0 is-hidden-mobile"></div>
       <div class="members">
         <members-sidebar></members-sidebar>
       </div>
@@ -13,31 +11,23 @@
 </template>
 
 <script>
-import membersSidebar from "~/components/members-sidebar";
+import membersSidebar from '~/components/members-sidebar'
 
 export default {
-  name: "HomePage",
+  name: 'HomePage',
   components: {
-    membersSidebar
+    membersSidebar,
   },
   data() {
-    return {};
+    return {}
   },
 
   computed: {},
+
   mounted() {},
 
-  methods: {
-    // insertAbove(evt, toColumnID, insertAboveID) {
-    //   const itemID = evt.dataTransfer.getData("itemID");
-    //   this.$store.dispatch("moveKanbanItem", {
-    //     itemID,
-    //     toColumnID,
-    //     insertAboveID
-    //   });
-    // }
-  }
-};
+  methods: {},
+}
 </script>
 
 <style scoped lang="scss">

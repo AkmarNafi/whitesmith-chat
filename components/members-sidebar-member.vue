@@ -51,11 +51,12 @@ export default {
     return {
       expandOnHover: false,
       expandWithDelay: false,
-      mobile: 'reduce',
+  
       reduce: false,
     }
   },
   computed: {
+    // return first letters on name | John Doe => JD
     getNameLetters() {
       const words = this.userData.name?.split(' ')
 
