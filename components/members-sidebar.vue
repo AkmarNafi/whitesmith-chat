@@ -58,7 +58,7 @@ export default {
       expandOnHover: false,
       expandWithDelay: false,
       mobile: 'reduce',
-      isSidebarReduced: false,
+      isSidebarReduced: true,
     }
   },
   computed: {
